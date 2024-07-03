@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to update the current time in UTC
-    function updateTime() {
+    // Function to update the current time and date in GMT+1
+    function updateTimeAndDate() {
         const now = new Date();
-        const utcTime = now.toUTCString().slice(-12, -4);
-        document.getElementById('utcTime').textContent = utcTime;
+        const options = {
+            timeZone: 'Europe/London',
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        };
+        const optionsDate = {
+            timeZone: 'Europe/London',
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+        const gmtPlus1Time = now.toLocaleString('en-GB', options);
+        const gmtPlus1Date = now.toLocaleString('en-GB', optionsDate);
+        
+        document.getElementById('gmtPlus1Time').textContent = gmtPlus1Time;
+        document.getElementById('gmtPlus1Date').textContent = gmtPlus1Date;
     }
 
-    // Function to update the current day of the week
-    function updateDay() {
-        const now = new Date();
-        const dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' });
-        document.getElementById('dayOfWeek').textContent = dayOfWeek;
-    }
-
-    updateTime();
-    updateDay();
-    setInterval(updateTime, 60000); // Update the time every minute
+    updateTimeAndDate();
+    setInterval(updateTimeAndDate, 1000); // Update the time every second
 });
-
