@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Tech Goals for the Next 2 Years</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p data-testid="slackDisplayName" style="font-weight: bold">Slack Name: Royto</p>
+            <p data-testid="slackEmail" style="font-weight: bold">Slack Email: akintomiwabewaji@gmail.com</p>
+            <img data-testid="slackProfilePicture" src="https://ca.slack-edge.com/T07466B189M-U07A0QHV6FL-3247214b5afb-512" alt="Slack Profile Picture" width="200" height="200">
+        </section>
+        <section id="goals" data-testid="goals-section">
+            <div class="goal" data-testid="goal-1">
+                <h2>Goal 1: Master ReactJS</h2>
+                <p>Become proficient in building complex applications using ReactJS.</p>
+            </div>
+            <div class="goal" data-testid="goal-2">
+                <h2>Goal 2: Get a Certificate as a Front-end Dev</h2>
+                <p>Reach the final stage in my internship with HNG and obtain a certificate.</p>
+            </div>
+            <div class="goal" data-testid="goal-3">
+                <h2>Goal 3: Contribute to Open Source</h2>
+                <p>Find and contribute to open source projects to improve coding skills and give back to the community.</p>
+            </div>
+            <div class="goal" data-testid="goal-4">
+                <h2>Goal 4: Get Certified in Cloud Technologies</h2>
+                <p>Earn certifications in cloud platforms like AWS or Azure to enhance cloud computing skills.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Current Date and Time</h2>
+            <p data-testid="currentTimeUTC">Current Time (UTC): <span id="utcTime"></span></p>
+            <p data-testid="currentDay">Current Day: <span id="dayOfWeek"></span></p>
+        </section>
+        <section>
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a data-testid="hngLink" href="https://hng.tech/learn">HNG Learn</a></li>
+                <li><a data-testid="keywordLink" href="https://keyword.dog">Keyword Dog</a></li>
+                <li><a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site">Scrape Any Web</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer data-testid="footer">
+        <p>&copy; 2024 My Tech Goals</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
