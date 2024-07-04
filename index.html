@@ -15,24 +15,24 @@
     <main>
         <section>
             <h2>About Me</h2>
-            <p data-testid="slackDisplayName" style="font-weight: bold">Slack Name: Royto</p>
-            <p data-testid="slackEmail" style="font-weight: bold">Slack Email: akintomiwabewaji@gmail.com</p>
+            <p style="font-weight: bold">Slack Name:<span data-testid="SlackName">Royto</span></p>
+            <p style="font-weight: bold">Slack Email: <span data-testid="slackEmail">akintomiwabewaji@gmail.com</span></p>
             <img data-testid="slackProfilePicture" src="https://ca.slack-edge.com/T07466B189M-U07A0QHV6FL-3247214b5afb-512" alt="Slack Profile Picture" width="200" height="200">
         </section>
-        <section id="goals" data-testid="goals-section">
-            <div class="goal" data-testid="goal-1">
+        <section id="goals">
+            <div class="goal">
                 <h2>Goal 1: Master ReactJS</h2>
                 <p>Become proficient in building complex applications using ReactJS.</p>
             </div>
-            <div class="goal" data-testid="goal-2">
+            <div class="goal">
                 <h2>Goal 2: Get a Certificate as a Front-end Dev</h2>
                 <p>Reach the final stage in my internship with HNG and obtain a certificate.</p>
             </div>
-            <div class="goal" data-testid="goal-3">
+            <div class="goal">
                 <h2>Goal 3: Contribute to Open Source</h2>
                 <p>Find and contribute to open source projects to improve coding skills and give back to the community.</p>
             </div>
-            <div class="goal" data-testid="goal-4">
+            <div class="goal">
                 <h2>Goal 4: Get Certified in Cloud Technologies</h2>
                 <p>Earn certifications in cloud platforms like AWS or Azure to enhance cloud computing skills.</p>
             </div>
@@ -40,8 +40,8 @@
         <section>
             <h2>Current Date and Time</h2>
             <div>
-                <p>Current Time (GMT+1): <span id="gmtPlus1Time"></span></p>
-                <p>Current Date (GMT+1): <span id="gmtPlus1Date"></span></p>
+                <p>Current Time (GMT+1): <span id="gmtPlus1Time" data-testid=“currentUTCTime”></span></p>
+                <p>Current Date (GMT+1): <span id="gmtPlus1Date" data-testid=“currentUTCDate”></span></p>
             </div>
         </section>
         <section>
@@ -54,7 +54,7 @@
         </section>
     </main>
 
-    <footer data-testid="footer">
+    <footer>
         <p>&copy; 2024 My Tech Goals</p>
     </footer>
 
