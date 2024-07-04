@@ -10,11 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             second: '2-digit'
         };
         const optionsDate = {
-            timeZone: 'Europe/London',
             weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
         };
         const gmtPlus1Time = now.toLocaleString('en-GB', options);
         const gmtPlus1Date = now.toLocaleString('en-GB', optionsDate);
